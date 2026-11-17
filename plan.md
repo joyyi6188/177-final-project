@@ -6,7 +6,7 @@
 - Repository: https://github.com/joyyi6188/177-final-project
 - The project has a starter web structure and the dataset `data/raw/export.csv`.
 - The topic is recall exploration for vehicle owners, buyers, and dealers.
-- Team members are labeled Member A (you) and Member B (your teammate) below; replace these labels with your names. Technology and deadline still need confirmation; the assignment PDF does not state a deadline.
+- Team members are labeled Member A(Jian Yi) (you) and Member B(Weiwei Lou) below; replace these labels with your names. Technology and deadline still need confirmation; the assignment PDF does not state a deadline.
 
 ## Goal
 
@@ -35,9 +35,9 @@ Build an interactive data visualization that helps a specific audience answer me
 
 ## Team responsibilities
 
-Member A owns data preparation and recall search. Member B owns the statistical charts and page design. Both members review the integrated application and final deliverables.
+Member A(Jian Yi) owns data preparation and recall search. Member B(Weiwei Lou) owns the statistical charts and page design. Both members review the integrated application and final deliverables.
 
-### Member A (you): Data, search, and integration
+### Jian Yi: Data, search, and integration
 
 - [ ] Write a reproducible preprocessing script in `scripts/`, preserving the original CSV.
 - [ ] Parse dates and affected-unit counts, preserve missing descriptions, and extract usable recall URLs.
@@ -53,7 +53,7 @@ Member A owns data preparation and recall search. Member B owns the statistical 
 
 **Complete when:** the dataset is reproducible, searches return relevant campaigns, details are accurate, and shared filters update all views consistently.
 
-### Member B (teammate): Charts, layout, and deployment
+### WeiWei Lou: Charts, layout, and deployment
 
 - [ ] Implement a horizontal Top N recall ranking chart for question 2, sorted numerically by affected units; default to the top 10 campaigns.
 - [ ] Include clear labels and tooltips with the recall ID, subject, manufacturer, date, and affected units. Clicking a bar selects that recall for the detail panel.
@@ -72,7 +72,7 @@ Member A owns data preparation and recall search. Member B owns the statistical 
 ### Shared tasks
 
 - [ ] Agree on a page sketch, chart encodings, technology, and interaction behavior before implementation.
-- [ ] Agree on the data schema and component interfaces; Member A provides a small sample JSON early so Member B can develop in parallel.
+- [ ] Agree on the data schema and component interfaces; Jian Yi provides a small sample JSON early so Member B(Weiwei Lou) can develop in parallel.
 - [ ] Review each other's work and run through all three user questions on the integrated site.
 - [ ] Write the video script together and include at least one finding supported by the data.
 - [ ] Watch the complete video, check the three submission links, and complete the Gradescope form with both members listed.
@@ -85,7 +85,7 @@ Member A owns data preparation and recall search. Member B owns the statistical 
 - The annual chart shows all years matching those three filters. A year selection highlights the selected period and additionally filters the ranking and results list, retaining historical context in the annual chart.
 - Clicking a ranking bar or list item opens details without filtering the entire dataset to that campaign.
 - Provide one reset-all-filters control. Clear a selected recall if it is no longer in the filtered results.
-- Components report interactions through shared callbacks rather than directly changing another component's DOM. Member A connects the components; Member B manages chart rendering and updates.
+- Components report interactions through shared callbacks rather than directly changing another component's DOM. Member A(Jian Yi) connects the components; Member B(Weiwei Lou) manages chart rendering and updates.
 - Work on separate branches, such as `feature/data-search` and `feature/charts-layout`. Coordinate changes to shared files before editing them.
 
 ### Collaboration order
@@ -213,4 +213,4 @@ Complete the core path first: suitable data, two useful linked views, accurate i
 
 ## Immediate next step
 
-Together, sketch the annual chart, Top N ranking, search controls, and detail panel. Agree on the shared data schema, then begin parallel development using Member A's sample JSON.
+Together, sketch the annual chart, Top N ranking, search controls, and detail panel. Agree on the shared data schema, then begin parallel development using Member A(Jian Yi)'s sample JSON.
