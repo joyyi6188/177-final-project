@@ -1,0 +1,1032 @@
+year,component_group,recall_count
+1966,Brakes,16
+1966,Electrical,2
+1966,Fuel System,3
+1966,Latches/Locks/Linkages,1
+1966,Power Train,4
+1966,Seats & Restraints,3
+1966,Steering,12
+1966,Structure,3
+1966,Suspension,1
+1966,Tires & Wheels,6
+1966,Trailer Hitches,1
+1966,Vehicle Speed Control,6
+1967,Brakes,42
+1967,Electrical,7
+1967,Engine,3
+1967,Equipment,2
+1967,Fuel System,2
+1967,Latches/Locks/Linkages,2
+1967,Power Train,9
+1967,Seats & Restraints,2
+1967,Steering,40
+1967,Structure,2
+1967,Suspension,8
+1967,Tires & Wheels,10
+1967,Trailer Hitches,2
+1967,Vehicle Speed Control,8
+1967,Visibility & Lighting,4
+1968,Brakes,38
+1968,Electrical,1
+1968,Engine,1
+1968,Equipment,1
+1968,Fuel System,5
+1968,Latches/Locks/Linkages,2
+1968,Other / Unknown,1
+1968,Power Train,6
+1968,Seats & Restraints,5
+1968,Steering,33
+1968,Structure,3
+1968,Suspension,6
+1968,Tires & Wheels,9
+1968,Trailer Hitches,5
+1968,Vehicle Speed Control,10
+1968,Visibility & Lighting,11
+1969,Brakes,52
+1969,Electrical,4
+1969,Engine,3
+1969,Equipment,5
+1969,Fuel System,11
+1969,Latches/Locks/Linkages,5
+1969,Power Train,8
+1969,Seats & Restraints,16
+1969,Steering,20
+1969,Structure,4
+1969,Suspension,11
+1969,Tires & Wheels,23
+1969,Trailer Hitches,5
+1969,Vehicle Speed Control,12
+1969,Visibility & Lighting,8
+1970,Brakes,43
+1970,Electrical,4
+1970,Engine,3
+1970,Equipment,7
+1970,Fuel System,10
+1970,Power Train,2
+1970,Seats & Restraints,10
+1970,Steering,22
+1970,Structure,5
+1970,Suspension,14
+1970,Tires & Wheels,27
+1970,Trailer Hitches,1
+1970,Vehicle Speed Control,10
+1970,Visibility & Lighting,4
+1971,Brakes,54
+1971,Electrical,5
+1971,Engine,5
+1971,Equipment,6
+1971,Fuel System,11
+1971,Latches/Locks/Linkages,20
+1971,Other / Unknown,1
+1971,Power Train,8
+1971,Seats & Restraints,14
+1971,Steering,23
+1971,Structure,11
+1971,Suspension,28
+1971,Tires & Wheels,39
+1971,Trailer Hitches,2
+1971,Vehicle Speed Control,7
+1971,Visibility & Lighting,19
+1972,Brakes,52
+1972,Electrical,8
+1972,Engine,4
+1972,Equipment,10
+1972,Fuel System,9
+1972,Latches/Locks/Linkages,6
+1972,Power Train,19
+1972,Seats & Restraints,25
+1972,Steering,35
+1972,Structure,16
+1972,Suspension,81
+1972,Tires & Wheels,42
+1972,Trailer Hitches,2
+1972,Vehicle Speed Control,9
+1972,Visibility & Lighting,14
+1973,Brakes,41
+1973,Electrical,15
+1973,Engine,7
+1973,Equipment,11
+1973,Fuel System,18
+1973,Latches/Locks/Linkages,6
+1973,Other / Unknown,2
+1973,Power Train,18
+1973,Seats & Restraints,12
+1973,Steering,37
+1973,Structure,13
+1973,Suspension,24
+1973,Tires & Wheels,39
+1973,Trailer Hitches,3
+1973,Vehicle Speed Control,9
+1973,Visibility & Lighting,22
+1974,Brakes,49
+1974,Electrical,4
+1974,Engine,7
+1974,Equipment,13
+1974,Fuel System,16
+1974,Latches/Locks/Linkages,6
+1974,Other / Unknown,4
+1974,Power Train,9
+1974,Seats & Restraints,14
+1974,Steering,33
+1974,Structure,17
+1974,Suspension,20
+1974,Tires & Wheels,59
+1974,Trailer Hitches,2
+1974,Vehicle Speed Control,20
+1974,Visibility & Lighting,19
+1975,Brakes,56
+1975,Electrical,9
+1975,Engine,9
+1975,Equipment,22
+1975,Fuel System,15
+1975,Latches/Locks/Linkages,7
+1975,Other / Unknown,7
+1975,Power Train,12
+1975,Seats & Restraints,4
+1975,Steering,20
+1975,Structure,16
+1975,Suspension,17
+1975,Tires & Wheels,39
+1975,Trailer Hitches,3
+1975,Vehicle Speed Control,7
+1975,Visibility & Lighting,20
+1976,Brakes,46
+1976,Electrical,6
+1976,Engine,4
+1976,Equipment,31
+1976,Fuel System,17
+1976,Latches/Locks/Linkages,2
+1976,Other / Unknown,7
+1976,Power Train,10
+1976,Seats & Restraints,9
+1976,Steering,36
+1976,Structure,10
+1976,Suspension,15
+1976,Tires & Wheels,41
+1976,Trailer Hitches,3
+1976,Vehicle Speed Control,9
+1976,Visibility & Lighting,16
+1977,Brakes,50
+1977,Electrical,8
+1977,Engine,7
+1977,Equipment,36
+1977,Fuel System,24
+1977,Latches/Locks/Linkages,5
+1977,Other / Unknown,8
+1977,Power Train,7
+1977,Seats & Restraints,11
+1977,Steering,31
+1977,Structure,6
+1977,Suspension,18
+1977,Tires & Wheels,56
+1977,Trailer Hitches,4
+1977,Vehicle Speed Control,13
+1977,Visibility & Lighting,25
+1978,Brakes,59
+1978,Electrical,15
+1978,Engine,18
+1978,Equipment,32
+1978,Fuel System,39
+1978,Latches/Locks/Linkages,2
+1978,Other / Unknown,5
+1978,Power Train,15
+1978,Seats & Restraints,18
+1978,Steering,27
+1978,Structure,6
+1978,Suspension,18
+1978,Tires & Wheels,43
+1978,Trailer Hitches,2
+1978,Vehicle Speed Control,16
+1978,Visibility & Lighting,18
+1979,Brakes,58
+1979,Electrical,12
+1979,Engine,12
+1979,Equipment,30
+1979,Fuel System,24
+1979,Latches/Locks/Linkages,5
+1979,Other / Unknown,4
+1979,Power Train,15
+1979,Seats & Restraints,21
+1979,Steering,30
+1979,Structure,13
+1979,Suspension,26
+1979,Tires & Wheels,51
+1979,Trailer Hitches,2
+1979,Vehicle Speed Control,7
+1979,Visibility & Lighting,29
+1980,Brakes,36
+1980,Electrical,12
+1980,Engine,8
+1980,Equipment,17
+1980,Fuel System,16
+1980,Latches/Locks/Linkages,3
+1980,Other / Unknown,3
+1980,Power Train,10
+1980,Seats & Restraints,11
+1980,Steering,18
+1980,Structure,14
+1980,Suspension,6
+1980,Tires & Wheels,32
+1980,Trailer Hitches,5
+1980,Vehicle Speed Control,6
+1980,Visibility & Lighting,23
+1981,Brakes,21
+1981,Electrical,5
+1981,Engine,5
+1981,Equipment,12
+1981,Fuel System,15
+1981,Latches/Locks/Linkages,3
+1981,Other / Unknown,4
+1981,Power Train,8
+1981,Seats & Restraints,14
+1981,Steering,20
+1981,Structure,12
+1981,Suspension,17
+1981,Tires & Wheels,35
+1981,Trailer Hitches,3
+1981,Vehicle Speed Control,11
+1981,Visibility & Lighting,12
+1982,Brakes,20
+1982,Electrical,10
+1982,Engine,6
+1982,Equipment,14
+1982,Fuel System,20
+1982,Other / Unknown,1
+1982,Power Train,13
+1982,Seats & Restraints,8
+1982,Steering,20
+1982,Structure,8
+1982,Suspension,10
+1982,Tires & Wheels,20
+1982,Trailer Hitches,3
+1982,Vehicle Speed Control,8
+1982,Visibility & Lighting,13
+1983,Brakes,26
+1983,Electrical,9
+1983,Engine,9
+1983,Equipment,10
+1983,Fuel System,18
+1983,Latches/Locks/Linkages,4
+1983,Other / Unknown,1
+1983,Power Train,6
+1983,Seats & Restraints,14
+1983,Steering,21
+1983,Structure,7
+1983,Suspension,10
+1983,Tires & Wheels,31
+1983,Trailer Hitches,2
+1983,Vehicle Speed Control,6
+1983,Visibility & Lighting,8
+1984,Brakes,33
+1984,Driver Assistance & Stability,1
+1984,Electrical,9
+1984,Engine,11
+1984,Equipment,11
+1984,Fuel System,21
+1984,Latches/Locks/Linkages,10
+1984,Other / Unknown,3
+1984,Power Train,8
+1984,Seats & Restraints,11
+1984,Steering,22
+1984,Structure,7
+1984,Suspension,15
+1984,Tires & Wheels,28
+1984,Trailer Hitches,2
+1984,Vehicle Speed Control,6
+1984,Visibility & Lighting,11
+1985,Brakes,33
+1985,Electrical,11
+1985,Engine,10
+1985,Equipment,14
+1985,Fuel System,22
+1985,Latches/Locks/Linkages,2
+1985,Other / Unknown,1
+1985,Power Train,3
+1985,Seats & Restraints,11
+1985,Steering,19
+1985,Structure,13
+1985,Suspension,12
+1985,Tires & Wheels,40
+1985,Trailer Hitches,7
+1985,Vehicle Speed Control,9
+1985,Visibility & Lighting,20
+1986,Brakes,29
+1986,Electrical,14
+1986,Engine,4
+1986,Equipment,12
+1986,Fuel System,21
+1986,Latches/Locks/Linkages,4
+1986,Other / Unknown,1
+1986,Power Train,6
+1986,Seats & Restraints,18
+1986,Steering,25
+1986,Structure,7
+1986,Suspension,16
+1986,Tires & Wheels,24
+1986,Trailer Hitches,5
+1986,Vehicle Speed Control,13
+1986,Visibility & Lighting,20
+1987,Brakes,35
+1987,Electrical,14
+1987,Engine,7
+1987,Equipment,14
+1987,Fuel System,30
+1987,Latches/Locks/Linkages,2
+1987,Power Train,9
+1987,Seats & Restraints,14
+1987,Steering,18
+1987,Structure,10
+1987,Suspension,27
+1987,Tires & Wheels,30
+1987,Trailer Hitches,2
+1987,Vehicle Speed Control,19
+1987,Visibility & Lighting,21
+1988,Brakes,21
+1988,Electrical,14
+1988,Engine,11
+1988,Equipment,14
+1988,Fuel System,32
+1988,Latches/Locks/Linkages,3
+1988,Other / Unknown,2
+1988,Power Train,12
+1988,Seats & Restraints,33
+1988,Steering,20
+1988,Structure,7
+1988,Suspension,14
+1988,Tires & Wheels,21
+1988,Trailer Hitches,6
+1988,Vehicle Speed Control,12
+1988,Visibility & Lighting,19
+1989,Brakes,40
+1989,Electrical,14
+1989,Engine,9
+1989,Equipment,27
+1989,Fuel System,15
+1989,Latches/Locks/Linkages,1
+1989,Other / Unknown,5
+1989,Power Train,7
+1989,Seats & Restraints,38
+1989,Steering,23
+1989,Structure,10
+1989,Suspension,23
+1989,Tires & Wheels,15
+1989,Trailer Hitches,5
+1989,Vehicle Speed Control,21
+1989,Visibility & Lighting,28
+1990,Airbags,8
+1990,Brakes,31
+1990,Electrical,10
+1990,Engine,6
+1990,Equipment,32
+1990,Fuel System,28
+1990,Latches/Locks/Linkages,2
+1990,Other / Unknown,4
+1990,Power Train,6
+1990,Seats & Restraints,44
+1990,Steering,23
+1990,Structure,3
+1990,Suspension,10
+1990,Tires & Wheels,19
+1990,Trailer Hitches,5
+1990,Vehicle Speed Control,11
+1990,Visibility & Lighting,28
+1991,Airbags,3
+1991,Brakes,52
+1991,Electrical,12
+1991,Engine,4
+1991,Equipment,19
+1991,Fuel System,19
+1991,Latches/Locks/Linkages,5
+1991,Other / Unknown,4
+1991,Power Train,26
+1991,Seats & Restraints,45
+1991,Steering,23
+1991,Structure,9
+1991,Suspension,10
+1991,Tires & Wheels,16
+1991,Trailer Hitches,4
+1991,Vehicle Speed Control,7
+1991,Visibility & Lighting,23
+1992,Airbags,4
+1992,Brakes,31
+1992,Electrical,15
+1992,Engine,4
+1992,Equipment,9
+1992,Fuel System,20
+1992,Latches/Locks/Linkages,3
+1992,Other / Unknown,6
+1992,Power Train,7
+1992,Seats & Restraints,29
+1992,Steering,19
+1992,Structure,11
+1992,Suspension,10
+1992,Tires & Wheels,18
+1992,Trailer Hitches,2
+1992,Vehicle Speed Control,10
+1992,Visibility & Lighting,19
+1993,Airbags,6
+1993,Brakes,40
+1993,Electrical,14
+1993,Engine,7
+1993,Equipment,19
+1993,Fuel System,19
+1993,Latches/Locks/Linkages,5
+1993,Other / Unknown,8
+1993,Power Train,14
+1993,Seats & Restraints,28
+1993,Steering,14
+1993,Structure,26
+1993,Suspension,16
+1993,Tires & Wheels,12
+1993,Trailer Hitches,10
+1993,Vehicle Speed Control,12
+1993,Visibility & Lighting,14
+1994,Airbags,5
+1994,Brakes,39
+1994,Electrical,18
+1994,Engine,12
+1994,Equipment,23
+1994,Fuel System,34
+1994,Latches/Locks/Linkages,5
+1994,Other / Unknown,5
+1994,Power Train,10
+1994,Seats & Restraints,25
+1994,Steering,24
+1994,Structure,11
+1994,Suspension,22
+1994,Tires & Wheels,12
+1994,Trailer Hitches,7
+1994,Vehicle Speed Control,15
+1994,Visibility & Lighting,21
+1995,Airbags,10
+1995,Brakes,59
+1995,Electrical,27
+1995,Engine,11
+1995,Equipment,22
+1995,Fuel System,33
+1995,Latches/Locks/Linkages,12
+1995,Other / Unknown,9
+1995,Power Train,10
+1995,Seats & Restraints,48
+1995,Steering,22
+1995,Structure,17
+1995,Suspension,15
+1995,Tires & Wheels,17
+1995,Trailer Hitches,4
+1995,Vehicle Speed Control,16
+1995,Visibility & Lighting,25
+1996,Airbags,8
+1996,Brakes,45
+1996,Electrical,21
+1996,Engine,9
+1996,Equipment,16
+1996,Fuel System,27
+1996,Latches/Locks/Linkages,3
+1996,Other / Unknown,12
+1996,Power Train,11
+1996,Seats & Restraints,56
+1996,Steering,28
+1996,Structure,28
+1996,Suspension,31
+1996,Tires & Wheels,6
+1996,Trailer Hitches,3
+1996,Vehicle Speed Control,16
+1996,Visibility & Lighting,21
+1997,Airbags,8
+1997,Brakes,39
+1997,Electrical,24
+1997,Engine,5
+1997,Equipment,14
+1997,Fuel System,25
+1997,Latches/Locks/Linkages,5
+1997,Other / Unknown,6
+1997,Power Train,14
+1997,Seats & Restraints,49
+1997,Steering,15
+1997,Structure,21
+1997,Suspension,39
+1997,Tires & Wheels,16
+1997,Trailer Hitches,2
+1997,Vehicle Speed Control,15
+1997,Visibility & Lighting,21
+1998,Airbags,13
+1998,Brakes,48
+1998,Driver Assistance & Stability,1
+1998,Electrical,36
+1998,Engine,19
+1998,Equipment,31
+1998,Fuel System,50
+1998,Latches/Locks/Linkages,4
+1998,Other / Unknown,7
+1998,Power Train,27
+1998,Seats & Restraints,29
+1998,Steering,21
+1998,Structure,18
+1998,Suspension,23
+1998,Tires & Wheels,29
+1998,Trailer Hitches,5
+1998,Vehicle Speed Control,12
+1998,Visibility & Lighting,40
+1999,Airbags,15
+1999,Brakes,68
+1999,Electrical,27
+1999,Engine,14
+1999,Equipment,27
+1999,Fuel System,43
+1999,Latches/Locks/Linkages,8
+1999,Other / Unknown,16
+1999,Power Train,23
+1999,Seats & Restraints,31
+1999,Steering,29
+1999,Structure,22
+1999,Suspension,39
+1999,Tires & Wheels,25
+1999,Trailer Hitches,10
+1999,Vehicle Speed Control,12
+1999,Visibility & Lighting,35
+2000,Airbags,15
+2000,Brakes,96
+2000,Driver Assistance & Stability,2
+2000,Electrical,25
+2000,Engine,26
+2000,Equipment,35
+2000,Fuel System,56
+2000,Latches/Locks/Linkages,3
+2000,Other / Unknown,17
+2000,Power Train,28
+2000,Seats & Restraints,57
+2000,Steering,50
+2000,Structure,20
+2000,Suspension,60
+2000,Tires & Wheels,47
+2000,Trailer Hitches,22
+2000,Vehicle Speed Control,15
+2000,Visibility & Lighting,47
+2001,Airbags,16
+2001,Brakes,74
+2001,Electrical,36
+2001,Engine,16
+2001,Equipment,35
+2001,Fuel System,41
+2001,Latches/Locks/Linkages,5
+2001,Other / Unknown,12
+2001,Power Train,21
+2001,Seats & Restraints,61
+2001,Steering,59
+2001,Structure,23
+2001,Suspension,52
+2001,Tires & Wheels,40
+2001,Trailer Hitches,9
+2001,Vehicle Speed Control,15
+2001,Visibility & Lighting,44
+2002,Airbags,21
+2002,Brakes,100
+2002,Electrical,34
+2002,Engine,13
+2002,Equipment,51
+2002,Fuel System,40
+2002,Latches/Locks/Linkages,1
+2002,Other / Unknown,14
+2002,Power Train,24
+2002,Seats & Restraints,40
+2002,Steering,31
+2002,Structure,14
+2002,Suspension,30
+2002,Tires & Wheels,31
+2002,Trailer Hitches,16
+2002,Vehicle Speed Control,27
+2002,Visibility & Lighting,23
+2003,Airbags,10
+2003,Brakes,127
+2003,Electrical,45
+2003,Engine,21
+2003,Equipment,93
+2003,Fuel System,47
+2003,Latches/Locks/Linkages,1
+2003,Other / Unknown,3
+2003,Power Train,23
+2003,Seats & Restraints,47
+2003,Steering,31
+2003,Structure,21
+2003,Suspension,32
+2003,Tires & Wheels,27
+2003,Trailer Hitches,13
+2003,Vehicle Speed Control,15
+2003,Visibility & Lighting,44
+2004,Airbags,14
+2004,Brakes,94
+2004,Driver Assistance & Stability,1
+2004,Electrical,36
+2004,Engine,34
+2004,Equipment,116
+2004,Fuel System,69
+2004,Latches/Locks/Linkages,14
+2004,Power Train,23
+2004,Seats & Restraints,59
+2004,Steering,38
+2004,Structure,45
+2004,Suspension,30
+2004,Tires & Wheels,45
+2004,Trailer Hitches,10
+2004,Vehicle Speed Control,18
+2004,Visibility & Lighting,53
+2005,Airbags,18
+2005,Brakes,65
+2005,Driver Assistance & Stability,5
+2005,Electrical,43
+2005,Engine,38
+2005,Equipment,84
+2005,Fuel System,46
+2005,Latches/Locks/Linkages,6
+2005,Other / Unknown,14
+2005,Power Train,30
+2005,Seats & Restraints,33
+2005,Steering,50
+2005,Structure,30
+2005,Suspension,40
+2005,Tires & Wheels,69
+2005,Trailer Hitches,13
+2005,Vehicle Speed Control,15
+2005,Visibility & Lighting,46
+2006,Airbags,12
+2006,Brakes,73
+2006,Electrical,49
+2006,Engine,54
+2006,Equipment,89
+2006,Fuel System,39
+2006,Latches/Locks/Linkages,4
+2006,Other / Unknown,2
+2006,Power Train,26
+2006,Seats & Restraints,28
+2006,Steering,50
+2006,Structure,25
+2006,Suspension,42
+2006,Tires & Wheels,38
+2006,Trailer Hitches,10
+2006,Vehicle Speed Control,11
+2006,Visibility & Lighting,61
+2007,Airbags,15
+2007,Brakes,64
+2007,Electrical,39
+2007,Engine,69
+2007,Equipment,214
+2007,Fuel System,44
+2007,Latches/Locks/Linkages,4
+2007,Other / Unknown,2
+2007,Power Train,22
+2007,Seats & Restraints,32
+2007,Steering,41
+2007,Structure,32
+2007,Suspension,27
+2007,Tires & Wheels,25
+2007,Trailer Hitches,18
+2007,Vehicle Speed Control,10
+2007,Visibility & Lighting,55
+2008,Airbags,13
+2008,Brakes,48
+2008,Driver Assistance & Stability,1
+2008,Electrical,28
+2008,Engine,56
+2008,Equipment,293
+2008,Fuel System,42
+2008,Latches/Locks/Linkages,6
+2008,Power Train,35
+2008,Seats & Restraints,29
+2008,Steering,64
+2008,Structure,25
+2008,Suspension,42
+2008,Tires & Wheels,27
+2008,Trailer Hitches,20
+2008,Vehicle Speed Control,3
+2008,Visibility & Lighting,48
+2009,Airbags,11
+2009,Brakes,73
+2009,Driver Assistance & Stability,1
+2009,Electrical,33
+2009,Engine,39
+2009,Equipment,181
+2009,Fuel System,32
+2009,Latches/Locks/Linkages,7
+2009,Other / Unknown,6
+2009,Power Train,20
+2009,Seats & Restraints,22
+2009,Steering,23
+2009,Structure,28
+2009,Suspension,19
+2009,Tires & Wheels,16
+2009,Trailer Hitches,2
+2009,Vehicle Speed Control,6
+2009,Visibility & Lighting,51
+2010,Airbags,16
+2010,Brakes,58
+2010,Driver Assistance & Stability,4
+2010,Electrical,45
+2010,Engine,51
+2010,Equipment,235
+2010,Fuel System,23
+2010,Latches/Locks/Linkages,7
+2010,Other / Unknown,1
+2010,Power Train,42
+2010,Seats & Restraints,54
+2010,Steering,41
+2010,Structure,25
+2010,Suspension,25
+2010,Tires & Wheels,34
+2010,Trailer Hitches,4
+2010,Vehicle Speed Control,11
+2010,Visibility & Lighting,46
+2011,Airbags,14
+2011,Brakes,46
+2011,Driver Assistance & Stability,12
+2011,Electrical,59
+2011,Engine,61
+2011,Equipment,132
+2011,Fuel System,46
+2011,Latches/Locks/Linkages,10
+2011,Power Train,48
+2011,Seats & Restraints,24
+2011,Steering,28
+2011,Structure,27
+2011,Suspension,16
+2011,Tires & Wheels,18
+2011,Trailer Hitches,9
+2011,Vehicle Speed Control,7
+2011,Visibility & Lighting,98
+2012,Airbags,23
+2012,Brakes,62
+2012,Driver Assistance & Stability,3
+2012,Electrical,55
+2012,Engine,39
+2012,Equipment,198
+2012,Fuel System,30
+2012,Latches/Locks/Linkages,8
+2012,Power Train,21
+2012,Seats & Restraints,26
+2012,Steering,22
+2012,Structure,32
+2012,Suspension,29
+2012,Tires & Wheels,45
+2012,Vehicle Speed Control,3
+2012,Visibility & Lighting,65
+2013,Airbags,31
+2013,Brakes,67
+2013,Driver Assistance & Stability,3
+2013,Electrical,100
+2013,Engine,20
+2013,Equipment,170
+2013,Fuel System,24
+2013,Hybrid Propulsion System,1
+2013,Latches/Locks/Linkages,68
+2013,Other / Unknown,1
+2013,Power Train,41
+2013,Seats & Restraints,46
+2013,Steering,23
+2013,Structure,18
+2013,Suspension,26
+2013,Tires & Wheels,28
+2013,Trailer Hitches,1
+2013,Vehicle Speed Control,4
+2013,Visibility & Lighting,38
+2014,Airbags,47
+2014,Brakes,65
+2014,Driver Assistance & Stability,6
+2014,Electrical,95
+2014,Engine,59
+2014,Equipment,176
+2014,Fuel System,79
+2014,Hybrid Propulsion System,5
+2014,Latches/Locks/Linkages,18
+2014,Power Train,55
+2014,Seats & Restraints,63
+2014,Steering,38
+2014,Structure,30
+2014,Suspension,54
+2014,Tires & Wheels,31
+2014,Trailer Hitches,3
+2014,Vehicle Speed Control,7
+2014,Visibility & Lighting,37
+2015,Airbags,69
+2015,Brakes,78
+2015,Driver Assistance & Stability,13
+2015,Electrical,105
+2015,Engine,59
+2015,Equipment,197
+2015,Fuel System,50
+2015,Hybrid Propulsion System,3
+2015,Latches/Locks/Linkages,14
+2015,Other / Unknown,1
+2015,Power Train,61
+2015,Seats & Restraints,54
+2015,Steering,46
+2015,Structure,46
+2015,Suspension,74
+2015,Tires & Wheels,32
+2015,Trailer Hitches,12
+2015,Vehicle Speed Control,6
+2015,Visibility & Lighting,51
+2016,Airbags,106
+2016,Brakes,76
+2016,Driver Assistance & Stability,11
+2016,Electrical,117
+2016,Engine,35
+2016,Equipment,206
+2016,Fuel System,40
+2016,Hybrid Propulsion System,4
+2016,Latches/Locks/Linkages,8
+2016,Other / Unknown,6
+2016,Power Train,61
+2016,Seats & Restraints,81
+2016,Steering,51
+2016,Structure,61
+2016,Suspension,64
+2016,Tires & Wheels,31
+2016,Trailer Hitches,10
+2016,Vehicle Speed Control,5
+2016,Visibility & Lighting,58
+2017,Airbags,99
+2017,Brakes,66
+2017,Driver Assistance & Stability,6
+2017,Electrical,81
+2017,Engine,37
+2017,Equipment,194
+2017,Fuel System,61
+2017,Hybrid Propulsion System,5
+2017,Latches/Locks/Linkages,12
+2017,Power Train,47
+2017,Seats & Restraints,66
+2017,Steering,51
+2017,Structure,39
+2017,Suspension,48
+2017,Tires & Wheels,32
+2017,Trailer Hitches,5
+2017,Vehicle Speed Control,3
+2017,Visibility & Lighting,45
+2018,Airbags,92
+2018,Brakes,87
+2018,Driver Assistance & Stability,14
+2018,Electrical,131
+2018,Engine,38
+2018,Equipment,195
+2018,Fuel System,42
+2018,Hybrid Propulsion System,9
+2018,Latches/Locks/Linkages,8
+2018,Other / Unknown,1
+2018,Power Train,50
+2018,Seats & Restraints,68
+2018,Steering,40
+2018,Structure,64
+2018,Suspension,59
+2018,Tires & Wheels,38
+2018,Trailer Hitches,10
+2018,Vehicle Speed Control,2
+2018,Visibility & Lighting,85
+2019,Airbags,85
+2019,Brakes,90
+2019,Communication,1
+2019,Driver Assistance & Stability,23
+2019,Electrical,111
+2019,Engine,33
+2019,Equipment,153
+2019,Fuel System,35
+2019,Hybrid Propulsion System,7
+2019,Latches/Locks/Linkages,13
+2019,Other / Unknown,5
+2019,Power Train,45
+2019,Seats & Restraints,64
+2019,Steering,46
+2019,Structure,61
+2019,Suspension,42
+2019,Tires & Wheels,28
+2019,Trailer Hitches,21
+2019,Vehicle Speed Control,1
+2019,Visibility & Lighting,98
+2020,Airbags,58
+2020,Brakes,92
+2020,Communication,2
+2020,Driver Assistance & Stability,24
+2020,Electrical,140
+2020,Engine,28
+2020,Equipment,162
+2020,Fuel System,41
+2020,Hybrid Propulsion System,1
+2020,Latches/Locks/Linkages,13
+2020,Other / Unknown,1
+2020,Power Train,55
+2020,Seats & Restraints,56
+2020,Steering,31
+2020,Structure,44
+2020,Suspension,33
+2020,Tires & Wheels,32
+2020,Trailer Hitches,6
+2020,Vehicle Speed Control,4
+2020,Visibility & Lighting,58
+2021,Airbags,74
+2021,Brakes,85
+2021,Communication,3
+2021,Driver Assistance & Stability,33
+2021,Electrical,117
+2021,Engine,53
+2021,Equipment,190
+2021,Fuel System,107
+2021,Latches/Locks/Linkages,10
+2021,Other / Unknown,1
+2021,Power Train,36
+2021,Seats & Restraints,73
+2021,Steering,73
+2021,Structure,58
+2021,Suspension,52
+2021,Tires & Wheels,47
+2021,Trailer Hitches,4
+2021,Visibility & Lighting,78
+2022,Airbags,37
+2022,Brakes,63
+2022,Communication,3
+2022,Driver Assistance & Stability,45
+2022,Electrical,157
+2022,Engine,57
+2022,Equipment,215
+2022,Fuel System,53
+2022,Hybrid Propulsion System,4
+2022,Latches/Locks/Linkages,6
+2022,Other / Unknown,1
+2022,Power Train,53
+2022,Seats & Restraints,64
+2022,Steering,79
+2022,Structure,54
+2022,Suspension,37
+2022,Tires & Wheels,49
+2022,Trailer Hitches,5
+2022,Vehicle Speed Control,2
+2022,Visibility & Lighting,67
+2023,Airbags,45
+2023,Brakes,65
+2023,Driver Assistance & Stability,48
+2023,Electrical,210
+2023,Engine,36
+2023,Equipment,142
+2023,Fuel System,42
+2023,Latches/Locks/Linkages,11
+2023,Power Train,64
+2023,Seats & Restraints,59
+2023,Steering,52
+2023,Structure,80
+2023,Suspension,35
+2023,Tires & Wheels,33
+2023,Trailer Hitches,10
+2023,Vehicle Speed Control,7
+2023,Visibility & Lighting,61
+2024,Airbags,56
+2024,Brakes,70
+2024,Communication,1
+2024,Driver Assistance & Stability,58
+2024,Electrical,219
+2024,Engine,35
+2024,Equipment,185
+2024,Fuel System,44
+2024,Hybrid Propulsion System,2
+2024,Latches/Locks/Linkages,11
+2024,Power Train,41
+2024,Seats & Restraints,59
+2024,Steering,71
+2024,Structure,60
+2024,Suspension,33
+2024,Tires & Wheels,38
+2024,Trailer Hitches,10
+2024,Vehicle Speed Control,5
+2024,Visibility & Lighting,75
+2025,Airbags,43
+2025,Brakes,73
+2025,Communication,1
+2025,Driver Assistance & Stability,83
+2025,Electrical,187
+2025,Engine,40
+2025,Equipment,150
+2025,Fuel System,38
+2025,Hybrid Propulsion System,1
+2025,Latches/Locks/Linkages,13
+2025,Power Train,44
+2025,Seats & Restraints,64
+2025,Steering,29
+2025,Structure,80
+2025,Suspension,35
+2025,Tires & Wheels,31
+2025,Trailer Hitches,4
+2025,Vehicle Speed Control,4
+2025,Visibility & Lighting,74
+2026,Airbags,27
+2026,Brakes,35
+2026,Driver Assistance & Stability,51
+2026,Electrical,156
+2026,Engine,24
+2026,Equipment,144
+2026,Fuel System,35
+2026,Latches/Locks/Linkages,6
+2026,Power Train,33
+2026,Seats & Restraints,62
+2026,Steering,24
+2026,Structure,51
+2026,Suspension,27
+2026,Tires & Wheels,32
+2026,Trailer Hitches,4
+2026,Vehicle Speed Control,1
+2026,Visibility & Lighting,61

@@ -1,0 +1,54 @@
+{
+  "input_file": "export(1).csv",
+  "recall_records": 30428,
+  "unique_recall_ids": 30428,
+  "date_min": "1966-01-19",
+  "date_max": "2026-10-29",
+  "unique_manufacturers": 3087,
+  "component_groups": {
+    "Equipment": 4798,
+    "Brakes": 3394,
+    "Electrical": 2869,
+    "Visibility & Lighting": 2198,
+    "Seats & Restraints": 2111,
+    "Steering": 2005,
+    "Fuel System": 1958,
+    "Tires & Wheels": 1874,
+    "Suspension": 1715,
+    "Structure": 1479,
+    "Power Train": 1421,
+    "Engine": 1325,
+    "Airbags": 1147,
+    "Vehicle Speed Control": 587,
+    "Driver Assistance & Stability": 449,
+    "Latches/Locks/Linkages": 440,
+    "Trailer Hitches": 380,
+    "Other / Unknown": 225,
+    "Hybrid Propulsion System": 42,
+    "Communication": 11
+  },
+  "advisory_groups": {
+    "Neither": 30111,
+    "Do Not Drive only": 211,
+    "Park Outside only": 104,
+    "Both": 2
+  },
+  "quality_checks": {
+    "description_missing": 2401,
+    "consequence_missing": 4888,
+    "corrective_action_missing": 2388,
+    "both_advisories": 2,
+    "do_not_drive": 213,
+    "park_outside": 106,
+    "zero_affected": 49,
+    "completion_missing": 18642
+  },
+  "rules": {
+    "unit_of_observation": "one NHTSA recall campaign per recall_id",
+    "model_search": "case-insensitive substring in Subject + Recall Description; not a verified vehicle model mapping",
+    "component_group": "explicit convenience mapping; original component_raw retained",
+    "advisories": "four mutually exclusive categories; both retained separately",
+    "manufacturer": "no speculative company merger; exact original names retained",
+    "rows_removed": 0
+  }
+}
