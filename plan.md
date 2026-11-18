@@ -22,10 +22,13 @@ Build an interactive data visualization that helps a specific audience answer me
 
 1.
 What recalls are associated with this vehicle’s manufacturer and model description?--for buyer/dealer
+
 2. 
 Which recall campaigns have the lowest reported completion rates?
+
 3. 
 Which component types—such as brakes, steering, or electrical systems—were recalled most often over time? --for buyers, insurance companies, dealers
+
 4. 
 Which recalls include “Do Not Drive” or “Park Outside” advisories?
 
