@@ -43,6 +43,34 @@ Each member owns **two research questions end to end**, including the relevant d
 | Jian Yi (A) | Q1: manufacturer/model-description search; Q2: lowest reported completion rates | Search and details view; completion-rate ranking |
 | Weiwei Lou (B) | Q3: component recall frequency over time; Q4: safety advisories | Component-by-year visualization; advisory overview and campaign list |
 
+### Explore alternatives before choosing final designs
+
+The four questions and the two-question ownership split are fixed. Visualization types below are **candidates**, not final decisions. Each person explores at least two options for each assigned question, then both members meet to select the final design for every question and integrate all four into one application.
+
+| Question | Owner | Candidate diagrams or presentation patterns |
+| --- | --- | --- |
+| Q1: Manufacturer/model-description search | Jian Yi | Filtered recall timeline with clickable markers; searchable table with a detail panel; manufacturer/component bars linked to matching campaigns |
+| Q2: Lowest reported completion rates | Jian Yi | Ascending horizontal bar chart; ranked dot plot; report-date-versus-completion scatterplot with linked lowest-rate list |
+| Q3: Component recalls over time | Weiwei Lou | Component-by-year heatmap; small-multiple line charts; selected-component multi-series line chart |
+| Q4: Safety advisories | Weiwei Lou | Mutually exclusive advisory-category bars linked to a campaign list; stacked annual advisory bars; advisory timeline with category filters and campaign details |
+
+For each assigned question, the owner will:
+
+- [ ] Prepare at least two sketches or lightweight prototypes using the same data subset and clearly defined metric.
+- [ ] Explain how each option answers the question, what users can compare, and which filters or selections it supports.
+- [ ] Record readability, accessibility, missing-data handling, implementation effort, and limitations; propose one preferred option with reasons.
+- [ ] Bring the alternatives and at least one example user task to the joint design meeting.
+
+At the joint design meeting, both members will:
+
+- [ ] Compare alternatives for all four questions and agree on one primary design per question, with supporting detail views where useful.
+- [ ] Record the selected design, rationale, owner, and interaction behavior in `docs/design/README.md`.
+- [ ] Agree on a consistent layout, colors, labels, shared filters, and recall-selection behavior.
+- [ ] Check that the four views form a coherent exploration flow and agree on what can be completed in the available time.
+- [ ] Implement the selected designs, integrate all four questions, and jointly review the final version.
+
+The component tasks below define required behavior; any named chart type is provisional until this meeting.
+
 ### Jian Yi: Questions 1 and 2
 
 - [ ] **Q1 data:** prepare manufacturer, description, recall ID, date, type, and original-link fields. Preserve missing descriptions and document search limitations.
@@ -99,11 +127,12 @@ Each member owns **two research questions end to end**, including the relevant d
 
 ### Collaboration order
 
-1. Together: agree on sketches, data definitions, sample records, and interfaces.
-2. In parallel: Jian builds Q1/Q2; Weiwei builds Q3/Q4, each owning the relevant preparation and checks.
-3. Together: integrate all four views with shared filters and details.
-4. Cross-review: Jian reviews Q3/Q4; Weiwei reviews Q1/Q2; both complete all four user tasks.
-5. Delivery: Weiwei leads deployment/video editing; Jian coordinates data/state integration; both approve the demonstrated findings and submission.
+1. Together: agree on data definitions, sample records, and basic interfaces.
+2. Independently: Jian explores multiple patterns for Q1/Q2; Weiwei explores multiple patterns for Q3/Q4.
+3. Joint design meeting: compare the alternatives and record the final pattern for each question.
+4. In parallel: implement the selected designs, then integrate all four views with shared filters and details.
+5. Cross-review: Jian reviews Q3/Q4; Weiwei reviews Q1/Q2; both complete all four user tasks.
+6. Delivery: Weiwei leads deployment/video editing; Jian coordinates data/state integration; both approve the demonstrated findings and submission.
 
 ### Required
 
@@ -118,6 +147,31 @@ Each member owns **two research questions end to end**, including the relevant d
 - Design around realistic users and their questions about the data.
 - Aim for at least two visualization components linked through interaction. The assignment describes this as a typical successful approach, not a mandatory rule.
 - Explain the data source, intended users and questions, preprocessing, features, and at least one visible insight in the video.
+
+## Current raw-to-processed data pipeline
+
+The existing implementation is `scripts/prepare_recalls.py`. The steps below describe what the script currently does, rather than features only proposed in this plan.
+
+```sh
+python3 scripts/prepare_recalls.py data/raw/export.csv --out data/processed
+```
+
+1. **Read and validate:** read UTF-8 CSV (allowing a BOM), trim header/value whitespace, check required columns, require unique nonempty NHTSA IDs, parse dates and affected counts, and reject negative affected counts or advisory values other than Yes/No. Invalid IDs cause an error rather than silent deduplication.
+2. **Normalize fields:** rename fields to snake_case; convert dates from MM/DD/YYYY to YYYY-MM-DD; derive `year`; remove commas from affected-unit counts and convert them to integers. CSV stores these values as text, so JavaScript must still parse numeric fields when loading.
+3. **Prepare search and links:** retain original manufacturer names and create a case-folded manufacturer search key. Combine Subject and Recall Description into case-folded `model_search_text`; this searches both fields, not a verified model database. Extract the URL from the wrapped Recall Link text and flag unexpected URL hosts in the quality report.
+4. **Group components:** retain `component_raw` and map it to 20 convenience display groups. Examples include hydraulic/air/parking brakes → Brakes, and tires/wheels → Tires & Wheels. These are project-defined groups, not new official NHTSA categories.
+5. **Prepare advisories:** convert Yes/No to CSV strings `true`/`false`; derive four mutually exclusive groups: Neither, Do Not Drive only, Park Outside only, and Both. JavaScript must explicitly parse the boolean strings.
+6. **Preserve missing narrative text:** descriptions, consequences, and corrective actions remain blank where missing. Preserve all 30,428 campaign records; do not overwrite the raw file or merge manufacturer aliases.
+7. **Write outputs:** create campaign-level `recalls_clean.csv`, manufacturer counts, annual counts, component/advisory counts by year and manufacturer, variants including recall type, and `quality_report.json`. Aggregates count campaigns, not affected units; combinations with zero records are omitted rather than written as zero rows.
+
+### Current gaps to address before final integration
+
+- **Q2 is not ready in the processed data:** the script counts blank completion rates for the quality report but does not export or validate completion percentages. Add the raw value, parsed rate, and missing/invalid status before building Q2. Do not treat missing rates as zero.
+- The campaign CSV also omits the original manufacturer campaign number. The raw file remains available if this field is needed.
+- The proposed camelCase frontend schema above differs from the existing snake_case CSV headers; agree on a loading adapter or update the contract before integration.
+- Existing aggregates cannot support arbitrary model-keyword filtering or all combinations of component and advisory filters. Recompute counts from matching campaign-level records for those cases; do not use an aggregate that lacks a selected filter dimension.
+- `data/processed/README.md` still describes the earlier Q2 annual-count question and needs updating when the Q2 completion fields are implemented.
+- The saved quality report names `export(1).csv` as its input, while the documented command uses `export.csv`. Verify provenance before claiming that report was generated from the current file; no regeneration was performed during this planning update.
 
 ## Implementation milestones
 
@@ -222,4 +276,4 @@ Complete the core path first: suitable data, two useful linked views, accurate i
 
 ## Immediate next step
 
-Together, sketch the search/details view, completion-rate ranking, component trend, and advisory overview. Agree on the shared schema and sample records, then develop Jian’s Q1/Q2 and Weiwei’s Q3/Q4 in parallel.
+Agree on the shared data schema and sample records. Jian then prepares alternatives for Q1/Q2 and Weiwei for Q3/Q4. Meet to choose the final pattern for each question before implementing and integrating the four-question application.
