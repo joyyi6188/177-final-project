@@ -6,7 +6,7 @@
 - Repository: https://github.com/joyyi6188/177-final-project
 - The project has a starter web structure and the dataset `data/raw/export.csv`.
 - The topic is recall exploration for vehicle owners, buyers, and dealers.
-- Team members are labeled Member A(Jian Yi) (you) and Member B(Weiwei Lou) below; replace these labels with your names. Technology and deadline still need confirmation; the assignment PDF does not state a deadline.
+- Team members are Jian Yi (Member A) and Weiwei Lou (Member B). Technology and deadline still need confirmation; the assignment PDF does not state a deadline.
 
 ## Goal
 
@@ -20,90 +20,90 @@ Build an interactive data visualization that helps a specific audience answer me
 
 ### Research questions
 
-1.
-What recalls are associated with this vehicle’s manufacturer and model description?--for buyer/dealer
-
-2. 
-Which recall campaigns have the lowest reported completion rates?
-
-3. 
-Which component types—such as brakes, steering, or electrical systems—were recalled most often over time? --for buyers, insurance companies, dealers
-
-4. 
-Which recalls include “Do Not Drive” or “Park Outside” advisories?
-
+1. What recalls are associated with this vehicle’s manufacturer and model description? (Owners, buyers, and dealers)
+2. Which recall campaigns have the lowest reported completion rates?
+3. Which component types—such as brakes, steering, or electrical systems—were recalled most often over time? (Buyers, insurance companies, and dealers)
+4. Which recalls include “Do Not Drive” or “Park Outside” advisories?
 
 ### Data definitions and limitations
 
 - Each record represents a recall campaign, identified by `NHTSA ID`.
-- For question 1, filter by `Manufacturer` and search for model keywords in `Recall Description`. The dataset has no separate model or VIN field. Description matches identify potentially relevant campaigns; they cannot confirm whether a specific vehicle is affected. Provide the original recall link for verification.
-- For question 2, convert `Potentially Affected` to a number after removing thousands separators. Rank campaigns by this value. Totals across campaigns do not represent unique vehicles because campaigns can overlap.
-- For question 3, count unique recall IDs by the year of `Report Received Date`, not vehicle model year. The file covers January 19, 1966 through October 29, 2026; label 2026 as a partial year.
-- Allow filtering by `Recall Type`. Use “vehicles or products” or “affected units” when displaying multiple types.
-- Recall counts alone cannot establish manufacturer safety because production and fleet-size denominators are unavailable. Completion rates are outside the scope of the three selected questions.
+- Q1: filter by `Manufacturer` and search model keywords in `Recall Description`. There is no separate model or VIN field. Text matches identify potentially relevant campaigns, not confirmed eligibility for a particular vehicle. Provide the original recall link.
+- Q2: parse the reported completion percentage as a number. Missing values mean not reported, not 0%. Exclude values outside 0–100% from ranking and document them. Include valid 0% values. Display report dates because recent campaigns have had less time for completion; this snapshot cannot measure repair speed or establish manufacturer performance.
+- Q3: count unique recall IDs by component and the year of `Report Received Date`, not vehicle model year. Coverage is January 19, 1966 through October 29, 2026; label 2026 as partial. Recall counts lack production or fleet-size denominators and cannot establish safety rankings.
+- Q4: use the explicit advisory columns rather than inferring advisories from description keywords. A campaign may have both advisories; count it once when filtering for either. Absence of these advisories does not mean absence of risk.
+- Allow filtering by `Recall Type`. Use “vehicles or products” or “affected units” for mixed types. Affected-unit totals across campaigns do not represent unique vehicles because campaigns can overlap.
 
 ## Team responsibilities
 
-Member A(Jian Yi) owns data preparation and recall search. Member B(Weiwei Lou) owns the statistical charts and page design. Both members review the integrated application and final deliverables.
+Each member owns **two research questions end to end**, including the relevant data preparation, visualization or search view, interactions, validation, documentation, and video explanation.
 
-### Jian Yi: Data, search, and integration
+| Member | Research questions | Main deliverables |
+| --- | --- | --- |
+| Jian Yi (A) | Q1: manufacturer/model-description search; Q2: lowest reported completion rates | Search and details view; completion-rate ranking |
+| Weiwei Lou (B) | Q3: component recall frequency over time; Q4: safety advisories | Component-by-year visualization; advisory overview and campaign list |
 
-- [ ] Write a reproducible preprocessing script in `scripts/`, preserving the original CSV.
-- [ ] Parse dates and affected-unit counts, preserve missing descriptions, and extract usable recall URLs.
-- [ ] Generate `data/processed/recalls.json` and document the source, field definitions, transformations, and limitations in `data/README.md`.
-- [ ] Implement the manufacturer selector, recall-type selector, and case-insensitive model-description keyword search for question 1.
-- [ ] Implement the results list and recall detail panel, including the date, subject, manufacturer, affected units, description, consequences, remedy, and original link.
-- [ ] Implement shared filter state in `src/js/state.js` and connect all components in `src/js/main.js`.
-- [ ] Handle missing descriptions, zero affected units, no matching results, and data-loading errors.
-- [ ] Check chart counts and rankings against the processed data.
-- [ ] Prepare the video explanation of the data, preprocessing, and search feature.
+### Jian Yi: Questions 1 and 2
 
-**Primary files:** `scripts/`, `data/`, `src/js/state.js`, `src/js/main.js`, `src/js/components/recallSearch.js`, and `src/js/components/recallDetails.js`.
+- [ ] **Q1 data:** prepare manufacturer, description, recall ID, date, type, and original-link fields. Preserve missing descriptions and document search limitations.
+- [ ] **Q1 interface:** implement manufacturer and recall-type selectors, case-insensitive description search, a results list, and the shared recall detail panel.
+- [ ] **Q1 validation:** check manufacturer/keyword combinations, missing descriptions, no results, and original links against sample source records.
+- [ ] **Q2 data:** prepare numeric completion rates, distinguish missing/invalid values from valid zeroes, and document exclusions.
+- [ ] **Q2 visualization:** build an ascending completion-rate ranking, defaulting to the lowest 10 valid reported rates. Show percentages, recall ID/subject, manufacturer, and report date; open details when a campaign is selected.
+- [ ] **Q2 interactions:** support shared filters and a Top N control; show how many matching campaigns have valid reported rates. Use a documented tie-breaker, such as recall ID, for equal rates.
+- [ ] **Q2 validation:** verify numeric sorting, valid 0% values, missing values, out-of-range values, and ties. Explain the recall-age limitation next to the ranking.
+- [ ] Coordinate common data loading and shared state in `src/js/main.js` and `src/js/state.js`, using the interface agreed with Weiwei.
+- [ ] Document Q1/Q2 and prepare their video demonstrations and supported findings.
 
-**Complete when:** the dataset is reproducible, searches return relevant campaigns, details are accurate, and shared filters update all views consistently.
+**Primary component files:** `src/js/components/recallSearch.js`, `src/js/components/recallDetails.js`, and `src/js/components/completionRanking.js`.
 
-### WeiWei Lou: Charts, layout, and deployment
+**Complete when:** users can find relevant campaigns and inspect the lowest valid reported completion rates under the selected filters, with accurate details and clear limitations.
 
-- [ ] Implement a horizontal Top N recall ranking chart for question 2, sorted numerically by affected units; default to the top 10 campaigns.
-- [ ] Include clear labels and tooltips with the recall ID, subject, manufacturer, date, and affected units. Clicking a bar selects that recall for the detail panel.
-- [ ] Implement the annual recall-count chart for question 3, ordered chronologically and labeled with the partial-year limitation for 2026.
-- [ ] Support selecting a year or year range to filter the ranking and results list.
-- [ ] Build the page layout, styling, legends, tooltips, selection indicators, and responsive behavior.
-- [ ] Handle empty chart results, small result sets, and very large values.
-- [ ] Review search usability and the clarity of linked interactions.
-- [ ] Deploy the application and verify that the hosted site loads its data and assets correctly.
-- [ ] Lead screen recording, editing, and the final 3–5 minute MP4 export.
+### Weiwei Lou: Questions 3 and 4
 
-**Primary files:** `index.html`, `src/css/styles.css`, `src/js/components/recallRanking.js`, `src/js/components/yearlyTrend.js`, and `submission/video/`.
+- [ ] **Q3 data:** validate unique-campaign counts grouped by report year and component. Reuse existing processed aggregates where compatible with the shared filters.
+- [ ] **Q3 visualization:** build a component-by-year heatmap or multi-series trend chart with readable labels and counts, marking 2026 as partial.
+- [ ] **Q3 interactions:** support component and year-range selection, tooltips, and a linked component ranking for the selected period.
+- [ ] **Q3 validation:** reconcile grouped counts with source records, check year ordering and zero-count combinations, and verify filtered totals.
+- [ ] **Q4 data:** normalize the two advisory flags and distinguish neither, park outside only, do not drive only, and both.
+- [ ] **Q4 visualization:** build an advisory summary chart and campaign list showing the exact advisory labels, subject, manufacturer, and report date.
+- [ ] **Q4 interactions:** support advisory-category selection and open the shared detail panel when a campaign is selected.
+- [ ] **Q4 validation:** check each flag category, campaigns with both advisories, deduplication of “either advisory” results, and filtered counts.
+- [ ] Lead page layout, shared styles, responsive behavior, and deployment, coordinating shared controls with Jian.
+- [ ] Document Q3/Q4, prepare their video demonstrations, and lead recording/editing of the final MP4.
 
-**Complete when:** both charts answer their questions accurately, interact with the shared filters and details, and work on the deployed site.
+**Primary component files:** `src/js/components/componentTrend.js` and `src/js/components/advisoryOverview.js`; also `index.html` and `src/css/styles.css`.
 
-### Shared tasks
+**Complete when:** users can compare component recall patterns over time and identify campaigns with either or both explicit advisories, with accurate linked results.
 
-- [ ] Agree on a page sketch, chart encodings, technology, and interaction behavior before implementation.
-- [ ] Agree on the data schema and component interfaces; Jian Yi provides a small sample JSON early so Member B(Weiwei Lou) can develop in parallel.
-- [ ] Review each other's work and run through all three user questions on the integrated site.
-- [ ] Write the video script together and include at least one finding supported by the data.
-- [ ] Watch the complete video, check the three submission links, and complete the Gradescope form with both members listed.
+### Shared tasks and handoffs
+
+- [ ] Agree on page sketches, chart encodings, technology, schema, and component callbacks before implementation.
+- [ ] Review the existing `scripts/prepare_recalls.py` and processed files together. Jian owns additions for Q1/Q2; Weiwei owns additions for Q3/Q4. Coordinate edits to the shared script and document each person's transformations.
+- [ ] Provide a small shared sample containing missing descriptions, valid/invalid/missing completion rates, and all advisory categories so both can develop in parallel.
+- [ ] Each member validates their own two questions, then cross-reviews the other member's views and calculations.
+- [ ] Check integrated filtering, reset, loading/error/empty states, keyboard-accessible controls, and readable labels together.
+- [ ] Write the video script together. Each member explains their two questions; include at least one supported finding and the material limitations.
+- [ ] Verify the hosted app, final MP4, code link, and Gradescope form together, listing both members.
 
 ### Shared data and interaction contract
 
-- Minimum data fields: `id`, `reportDate` (YYYY-MM-DD), `year`, `manufacturer`, `subject`, `component`, `recallType`, `potentiallyAffected` (number), `description`, `consequence`, `correctiveAction`, and `recallUrl`.
-- Shared filters: `manufacturer`, `modelQuery`, `recallType`, and `yearRange`. Use `selectedRecallId` separately for the detail panel.
-- Manufacturer, description keyword, and recall-type filters update all views.
-- The annual chart shows all years matching those three filters. A year selection highlights the selected period and additionally filters the ranking and results list, retaining historical context in the annual chart.
-- Clicking a ranking bar or list item opens details without filtering the entire dataset to that campaign.
-- Provide one reset-all-filters control. Clear a selected recall if it is no longer in the filtered results.
-- Components report interactions through shared callbacks rather than directly changing another component's DOM. Member A(Jian Yi) connects the components; Member B(Weiwei Lou) manages chart rendering and updates.
-- Work on separate branches, such as `feature/data-search` and `feature/charts-layout`. Coordinate changes to shared files before editing them.
+- Minimum fields: `id`, `reportDate` (YYYY-MM-DD), `year`, `manufacturer`, `subject`, `component`, `recallType`, `potentiallyAffected` (number), `description`, `consequence`, `correctiveAction`, `recallUrl`, `completionRate` (valid number or null), `completionRateStatus` (reported/missing/invalid), `parkOutside` (boolean), and `doNotDrive` (boolean).
+- Shared filters: `manufacturer`, `modelQuery`, `recallType`, `yearRange`, `component`, and `advisoryCategory`. All views use the same filtered campaign set. Keep `selectedRecallId` separate for details.
+- For Q3, retain all years matching the other filters and highlight the selected year range, so selecting a year does not remove historical context.
+- Selecting an advisory category updates the other views and campaign results. Selecting a ranking bar or list item opens details without filtering to one campaign.
+- Q2 ranks only valid reported rates within the shared filtered set; its missing/invalid exclusions must not remove records from Q1, Q3, or Q4.
+- Provide one reset-all-filters control. Clear a detail selection when its campaign is no longer in the filtered results.
+- Components communicate through shared callbacks rather than modifying each other's DOM. Jian coordinates state integration; each member implements updates in their own components.
+- Use separate branches, such as `feature/search-completion` and `feature/components-advisories`. Coordinate edits to shared files before changing them.
 
 ### Collaboration order
 
-1. Together: finalize the sketch, data schema, and interaction contract.
-2. In parallel: A prepares data and builds search/details; B builds charts and layout using the agreed sample data.
-3. Together: connect the components and verify filtering, selection, details, and reset behavior.
-4. Cross-review: A checks chart values; B checks search and details; both complete the three user tasks.
-5. Delivery: B deploys and edits the video; A verifies the data explanations and demonstrated findings; both review and submit.
+1. Together: agree on sketches, data definitions, sample records, and interfaces.
+2. In parallel: Jian builds Q1/Q2; Weiwei builds Q3/Q4, each owning the relevant preparation and checks.
+3. Together: integrate all four views with shared filters and details.
+4. Cross-review: Jian reviews Q3/Q4; Weiwei reviews Q1/Q2; both complete all four user tasks.
+5. Delivery: Weiwei leads deployment/video editing; Jian coordinates data/state integration; both approve the demonstrated findings and submission.
 
 ### Required
 
@@ -124,7 +124,7 @@ Member A(Jian Yi) owns data preparation and recall search. Member B(Weiwei Lou) 
 ### 1. Define the project
 
 - [x] Choose a topic and identify the intended audience.
-- [x] Write 2–3 specific questions that the visualization should answer.
+- [x] Define the four research questions and assign two to each member.
 - [x] Select `data/raw/export.csv`, with model-description search limitations documented above.
 - [ ] Record its source, usage conditions, coverage, units, and limitations.
 - [ ] Confirm team members and the course deadline.
@@ -152,7 +152,7 @@ Member A(Jian Yi) owns data preparation and recall search. Member B(Weiwei Lou) 
 - [ ] Choose readable colors and provide cues beyond color alone.
 - [ ] Define loading, error, and empty-result states.
 
-**Proposed interaction pattern:** manufacturer and description searches update the annual chart, ranking, and results. Selecting a year filters the ranking and results; selecting a recall opens its details. Follow the shared interaction contract above.
+**Proposed interaction pattern:** shared manufacturer, description, type, component, year, and advisory filters connect the four question views. Selecting a campaign opens its details. Completion-rate exclusions apply only to Q2. Follow the shared interaction contract above.
 
 **Done when:** the sketches show a complete path from an initial question to a useful comparison or detail.
 
@@ -222,4 +222,4 @@ Complete the core path first: suitable data, two useful linked views, accurate i
 
 ## Immediate next step
 
-Together, sketch the annual chart, Top N ranking, search controls, and detail panel. Agree on the shared data schema, then begin parallel development using Member A(Jian Yi)'s sample JSON.
+Together, sketch the search/details view, completion-rate ranking, component trend, and advisory overview. Agree on the shared schema and sample records, then develop Jian’s Q1/Q2 and Weiwei’s Q3/Q4 in parallel.
