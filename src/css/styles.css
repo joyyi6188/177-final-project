@@ -83,6 +83,7 @@ table { border-collapse: collapse; width: 100%; text-align: left; } th, td { pad
 .warning-stop { background: #f8ded9; color: #a7372d; }
 .warning-park { background: #fae8d6; color: #a95518; }
 #advisories > .eyebrow { color: #a9432e; }
+#advisories > .eyebrow, #advisories > h2 { text-align: right; }
 #advisories .heat-scale { background: linear-gradient(90deg, #fbece4, #a8352b); }
 #advisories .park-theme .heat-scale { background: linear-gradient(90deg, #fff2df, #aa5a0c); }
 #advisories h3 { margin: 2.5rem 0 .5rem; font-size: 1.15rem; }
