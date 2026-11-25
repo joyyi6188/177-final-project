@@ -52,6 +52,9 @@ table { border-collapse: collapse; width: 100%; text-align: left; } th, td { pad
 .heat-cell { width: 13px; height: 30px; min-width: 0; padding: 0; border: 0; border-radius: 3px; }
 .heat-cell:hover, .heat-cell:focus-visible { outline: 2px solid #173f3c; outline-offset: 1px; }
 .advisory-grid { grid-template-columns: 180px repeat(var(--years), 40px); }
+#advisory-explorer .heat-grid { margin-inline: auto; }
+#advisories > .controls { justify-content: center; }
+#advisory-explorer .heat-readout, #advisory-explorer .heat-legend { justify-content: center; text-align: center; }
 .advisory-grid .heat-cell { width: 40px; }
 .advisory-grid .heat-year { font-size: .75rem; }
 .heat-legend { display: flex; align-items: center; gap: .65rem; margin-top: 1rem; font-size: .8rem; color: #718480; }
